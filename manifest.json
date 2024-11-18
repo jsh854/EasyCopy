@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Clipboard Tracker",
   "version": "1.0",
-  "description": "Track copied text and manage it through a popup.",
+  "description": "Track copied text and manage it through a popup. Made with <3 by junaidshah(junaidshah349@gmail.com)",
   "permissions": ["clipboardRead", "storage", "scripting"],
   "background": {
     "service_worker": "background.js"

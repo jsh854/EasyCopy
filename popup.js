@@ -6,7 +6,6 @@ const loadCopies = () => {
         response.forEach(item => {
             const listItem = document.createElement("li");
             const liItem=document.createElement("p")
-            // liItem.textContent=item
             liItem.textContent = item;
 
             const removeBtn = document.createElement("button");
@@ -16,7 +15,6 @@ const loadCopies = () => {
             copyBtn.classList.add('copyBtn')
             copyBtn.onclick=()=>{
                 chrome.runtime.sendMessage({ action: "getSelectedCopy", data: item })
-                // navigator.clipboard.writeText(item)
                 .then(() => {
                     alert("Copied to clipboard!");
                 })
